@@ -1,0 +1,1340 @@
+{
+	"info": {
+		"_postman_id": "4de45fcb-b3df-4572-9e29-a161b8a5b65f",
+		"name": "Airbnb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20569198"
+	},
+	"item": [
+		{
+			"name": "vi-tri",
+			"item": [
+				{
+					"name": "Vi-tri",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/vi-tri",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"vi-tri"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vi-tri",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "tenViTri",
+									"value": "asda",
+									"type": "text"
+								},
+								{
+									"key": "tinhThanh",
+									"value": "zxczxc",
+									"type": "text"
+								},
+								{
+									"key": "quocGia",
+									"value": "vn",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1effb726-74df-4320-bf11-4cebe779fb9f"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/vi-tri",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"vi-tri"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vi-tri/{id}",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/vi-tri/5",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"vi-tri",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vi-tri/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "tenViTri",
+									"value": "string1",
+									"type": "text"
+								},
+								{
+									"key": "tinhThanh",
+									"value": "string1",
+									"type": "text"
+								},
+								{
+									"key": "quocGia",
+									"value": "string1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1effb726-74df-4320-bf11-4cebe779fb9f"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/vi-tri/7",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"vi-tri",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vi-tri/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/vi-tri/6",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"vi-tri",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vi-tri/phan-trang-tim-kiem",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "page",
+								"value": "1",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "pageSize",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{domain}}/vi-tri/phan-trang-tim-kiem?page=1&pageSize=10&search=ở đâu đó",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"vi-tri",
+								"phan-trang-tim-kiem"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "search",
+									"value": "ở đâu đó"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vi-tri/upload-hinh-vitri",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1effb726-74df-4320-bf11-4cebe779fb9f"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/vi-tri/upload-hinh-vitri/7",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"vi-tri",
+								"upload-hinh-vitri",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"NGUYENVANSY\",\r\n  \"email\": \"abc@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"phone\": \"09865466\",\r\n  \"birthday\": \"30/03/1999\",\r\n  \"gender\": \"nam\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/auth/register",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Lưu accessToken vào biến môi trường test\r",
+									"pm.environment.set(\"accessToken\", pm.response.json().metaData.accessToken);\r",
+									"\r",
+									"// Lưu refreshToken vào biến môi trường test\r",
+									"pm.environment.set(\"refreshToken\", pm.response.json().metaData.refreshToken);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"abc@gmail.com\",\r\n  \"pass_word\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/auth/signin",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "users",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/users/",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "NGUYENVANSY aa",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "abc112222@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "09865466",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "30/03/1999",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "nam",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "postman-cloud:///1effb726-74df-4320-bf11-4cebe779fb9f"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/users",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/users?id=2",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/{id}",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/users/3",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/{id}",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ngueynva",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ccdd@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123654645",
+									"type": "text"
+								},
+								{
+									"key": "birthday",
+									"value": "30/03/99",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "k co",
+									"type": "text"
+								},
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "/C:/Users/nguye/OneDrive/Pictures/anh3.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/users/3",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/phan-trang-tim-kiem",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/users/phan-trang-tim-kiem?page=4&pageSize=2&search=a",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"users",
+								"phan-trang-tim-kiem"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "4"
+								},
+								{
+									"key": "pageSize",
+									"value": "2"
+								},
+								{
+									"key": "search",
+									"value": "a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/search/{TenNguoiDung}",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/users/search/NGUYENVANSY",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"users",
+								"search",
+								"NGUYENVANSY"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users/upload-avatar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"type": "file",
+									"src": "postman-cloud:///1effb726-74df-4320-bf11-4cebe779fb9f"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/users/upload-avatar",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"users",
+								"upload-avatar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Phong-thue",
+			"item": [
+				{
+					"name": "phong-thue",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/phong-thue",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"phong-thue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "phong-thue",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "tenPhong",
+									"value": "test222",
+									"type": "text"
+								},
+								{
+									"key": "khach",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "phongNgu",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "giuong",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "phongTam",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "moTa",
+									"value": "k co j ca",
+									"type": "text"
+								},
+								{
+									"key": "giaTien",
+									"value": "10000",
+									"type": "text"
+								},
+								{
+									"key": "mayGiat",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "banLa",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "tivi",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "dieuHoa",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "wifi",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "bep",
+									"value": "fales",
+									"type": "text"
+								},
+								{
+									"key": "doXe",
+									"value": "fales",
+									"type": "text"
+								},
+								{
+									"key": "hoBoi",
+									"value": "fales",
+									"type": "text"
+								},
+								{
+									"key": "banUi",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "maViTri",
+									"value": "01",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/nguye/OneDrive/Pictures/anh 2.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/phong-thue",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"phong-thue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "phong-thue/lay-phong-theo-vi-tri",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/phong-thue/lay-phong-theo-vi-tri?maViTri=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"phong-thue",
+								"lay-phong-theo-vi-tri"
+							],
+							"query": [
+								{
+									"key": "maViTri",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "phong-thue/phan-trang-tim-kiem",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/phong-thue/phan-trang-tim-kiem?page=1&pageSize=10&search=Nhà Nghỉ Shinjuku",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"phong-thue",
+								"phan-trang-tim-kiem"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								},
+								{
+									"key": "search",
+									"value": "Nhà Nghỉ Shinjuku"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "phong-thue/{id}",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/phong-thue/4",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"phong-thue",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "phong-thue/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/phong-thue/4",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"phong-thue",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "phong-thue/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "tenPhong",
+									"value": "Phòng Deluxe Quận 1",
+									"type": "text"
+								},
+								{
+									"key": "khach",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "phongNgu",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "giuong",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "phongTam",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "moTa",
+									"value": "ban",
+									"type": "text"
+								},
+								{
+									"key": "giaTien",
+									"value": "100000000",
+									"type": "text"
+								},
+								{
+									"key": "mayGiat",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "banLa",
+									"value": "fales",
+									"type": "text"
+								},
+								{
+									"key": "tivi",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "dieuHoa",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "wifi",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "bep",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "doXe",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "hoBoi",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "banUi",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "maViTri",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1effb726-74df-4320-bf11-4cebe779fb9f"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/phong-thue/1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"phong-thue",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "phong-thue/upload-hinh-phong",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/nguye/OneDrive/Pictures/anh3.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{domain}}/phong-thue/upload-hinh-phong?maPhong=1",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"phong-thue",
+								"upload-hinh-phong"
+							],
+							"query": [
+								{
+									"key": "maPhong",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dat-phong",
+			"item": [
+				{
+					"name": "dat-phong",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/dat-phong",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"dat-phong"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dat-phong",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maPhong\": 1,\r\n  \"ngayDen\": \"2025-04-03\",\r\n  \"ngayDi\": \"2025-04-10\",\r\n  \"soLuongKhach\": 1,\r\n  \"maNguoiDat\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/dat-phong",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"dat-phong"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dat-phong/{id}",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/dat-phong/11",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"dat-phong",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dat-phong/{id}",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maPhong\": 1,\r\n  \"ngayDen\": \"2025-04-03\",\r\n  \"ngayDi\": \"2025-04-11\",\r\n  \"soLuongKhach\": 10,\r\n  \"maNguoiDat\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/dat-phong/11",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"dat-phong",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dat-phong/{id}",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/dat-phong/10",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"dat-phong",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dat-phong/lay-dat-phong-theo-nguoi-dung/{MaNguoiDung}",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/dat-phong/lay-dat-phong-theo-nguoi-dung/5",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"dat-phong",
+								"lay-dat-phong-theo-nguoi-dung",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Binh-luan",
+			"item": [
+				{
+					"name": "binh-luan",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/binh-luan",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"binh-luan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "binh-luan",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maPhong\": 2,\r\n  \"noiDung\": \"ádasdasdas\",\r\n  \"saoBinhLuan\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/binh-luan",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"binh-luan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "binh-luan/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maPhong\": 1,\r\n  \"noiDung\": \"ơphong nơm\",\r\n  \"saoBinhLuan\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/binh-luan/4",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"binh-luan",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "binh-luan/{id}",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{accessToken}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{domain}}/binh-luan/4",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"binh-luan",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
